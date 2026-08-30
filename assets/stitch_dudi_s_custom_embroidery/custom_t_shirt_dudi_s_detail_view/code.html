@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dudi's - Custom Embroidery T-Shirt</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#002201",
+                        "tertiary-container": "#696762",
+                        "primary": "#823b18",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#a1d494",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#76320f",
+                        "surface-tint": "#944925",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ffb596",
+                        "on-tertiary-container": "#eae6df",
+                        "outline-variant": "#dac1b8",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-background": "#1b1c1a",
+                        "secondary": "#3b6934",
+                        "surface-variant": "#e4e2de",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#514f4a",
+                        "inverse-primary": "#ffb596",
+                        "surface-container": "#efeeea",
+                        "inverse-surface": "#30312e",
+                        "on-primary-container": "#ffe1d6",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "tertiary-fixed": "#e6e2db",
+                        "primary-container": "#a0522d",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f5",
+                        "outline": "#87736b",
+                        "on-secondary-container": "#3f6d38",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#23501e",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-dim": "#dbdad6",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#b9eeab",
+                        "secondary-fixed": "#bcf0ae",
+                        "primary-fixed": "#ffdbcd",
+                        "surface-container-high": "#eae8e4",
+                        "on-primary-fixed": "#360f00",
+                        "on-surface-variant": "#54433c",
+                        "surface": "#fbf9f5",
+                        "on-tertiary-fixed-variant": "#484742"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "stack-sm": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-md-mobile": ["Playfair Display"],
+                        "title-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md-mobile": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "title-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .fiber-shadow {
+            box-shadow: 0 32px 64px rgba(160, 82, 45, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Mobile Menu Icon (Hidden on Desktop) -->
+<button class="md:hidden text-primary focus-within:ring-1 focus-within:ring-primary rounded">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<!-- Brand Logo -->
+<a class="font-display-lg text-display-lg text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity duration-300 md:font-display-lg md:text-display-lg font-display-lg-mobile text-display-lg-mobile" href="#">
+                Dudi's
+            </a>
+<!-- Navigation Links (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 transition-all duration-300 ease-in-out" href="#">Shop All</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:opacity-80 transition-opacity duration-300" href="#">For Couples</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:opacity-80 transition-opacity duration-300" href="#">Custom Order</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:opacity-80 transition-opacity duration-300" href="#">Our Story</a>
+</nav>
+<!-- Trailing Icons -->
+<div class="flex gap-stack-sm text-primary dark:text-primary-fixed-dim items-center">
+<button class="hover:opacity-80 transition-opacity duration-300 focus-within:ring-1 focus-within:ring-primary rounded p-1">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 focus-within:ring-1 focus-within:ring-primary rounded p-1 relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-primary-container ring-2 ring-surface"></span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-[100px] md:pt-[120px] pb-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Product Section Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-stack-md items-start">
+<!-- Image Gallery (Spans 7 columns on desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-unit">
+<div class="w-full h-[60vh] lg:h-[80vh] relative rounded overflow-hidden bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A highly detailed macro photograph of custom embroidery on an organic cotton t-shirt. The thread is a deep terracotta, contrasting beautifully against a soft beige fabric. The lighting is natural and soft, highlighting the tactile texture of the stitches and the premium quality of the cotton. The composition is clean, minimalist, and editorial, suitable for a high-end bespoke e-commerce store." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARGt39cNxPzS9vxOgkCaA1HWZpoqPzVImi4OVdwrnZnB7pmk01hGpNKPYh5cVrYsok_6ehuWlbqPXP7FNu3wPz-13Wv11ArM0vgro8RR9otT0OVwuUBqUQYPI8CcXGY_MtBM1_ejSiz8ikud3GVuN8GVLgDIyRUK2BGK-C7K8fgJe-cC36nykMVXMlGHD6uPDOt52_q8mNtg-rqP90i4uPtzQ0GmEl7K7Sf94N926hfWo0CtQe_Ou6"/>
+</div>
+<div class="grid grid-cols-2 gap-unit">
+<div class="h-48 relative rounded overflow-hidden bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up photograph of a folded custom embroidered t-shirt in a soft sand color. The focus is on a small, elegant monogram embroidered on the chest in forest green thread. The setting is minimal, perhaps resting on a clean wooden table with warm, diffused sunlight casting soft shadows. The overall aesthetic is artisanal, premium, and calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOVFQOY8IjoVaTqdAk09dYY_PzUzWPmzcJkhMPPeteUoM0Rlb094cP2mCdkKrQFQJ8_Ih1kh9a61zby5HjenfZZdq8j4EB0ty0zo8AcmSNWlNxBXt_zvG_nuJGt8xpCP4fx2kMtGkHL-yWQ96UrMgQ7KuQ3Nsu6uUBi-CDZAuhhcLaY8_u0zHvp50hGRF6c-MJSCU41LrYllUEveXyfz8aTty_koCZlkvI0GSX2wwmHPDW1aT9AQDm"/>
+</div>
+<div class="h-48 relative rounded overflow-hidden bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="An editorial lifestyle shot of a model wearing a custom embroidered white t-shirt. The embroidery features a subtle, delicate floral design near the collar. The background is a gently blurred, light, airy studio setting. The lighting is high-key and soft, emphasizing a modern, minimalist, and approachable high-end brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR6Wl855o6KlTGrsqGSUH_ww5nla8qRMmUvLjRHz2Bb66WLsCCrq2yQ0oep7HQXuVCfCMJR0ZBtLteSfVKH9xwvwLMHnyaaoOuNsiS0Sq0HeYqryeHX6EjhUN-Sdka6LwQSawiM0GKbNNDVwePKL00GmdJHOrMVo_FFocYjWaJFTF2ikk4KYa0gFss4Qu7P5vVQKmvuAJcGScjMd4Z7Hh13dZcJB1AHsIOLo1cizNTlMGnkl8qlGYR"/>
+</div>
+</div>
+</div>
+<!-- Product Details & Customization (Spans 5 columns on desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-stack-md sticky top-[120px]">
+<!-- Title & Price -->
+<div>
+<h1 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-primary mb-2">The Artisanal Tee</h1>
+<p class="font-title-sm text-title-sm text-on-surface-variant">$65.00</p>
+<p class="font-body-md text-body-md text-tertiary mt-4">Crafted from 100% organic cotton, this t-shirt provides a soft, breathable canvas for your personal touch. Each piece is hand-embroidered in our studio.</p>
+</div>
+<!-- Selectors -->
+<form class="flex flex-col gap-stack-sm">
+<!-- Shirt Color -->
+<div>
+<span class="font-label-caps text-label-caps text-on-surface block mb-3 uppercase tracking-widest">Shirt Color</span>
+<div class="flex gap-3">
+<!-- White -->
+<label class="cursor-pointer relative">
+<input checked="" class="peer sr-only" name="shirt_color" type="radio" value="white"/>
+<div class="w-10 h-10 rounded-full bg-[#FFFFFF] border border-outline-variant peer-checked:ring-2 peer-checked:ring-primary peer-checked:ring-offset-2 peer-checked:ring-offset-surface transition-all"></div>
+</label>
+<!-- Sand -->
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="shirt_color" type="radio" value="sand"/>
+<div class="w-10 h-10 rounded-full bg-[#EADDCD] border border-outline-variant peer-checked:ring-2 peer-checked:ring-primary peer-checked:ring-offset-2 peer-checked:ring-offset-surface transition-all"></div>
+</label>
+<!-- Sage -->
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="shirt_color" type="radio" value="sage"/>
+<div class="w-10 h-10 rounded-full bg-[#A1A892] border border-outline-variant peer-checked:ring-2 peer-checked:ring-primary peer-checked:ring-offset-2 peer-checked:ring-offset-surface transition-all"></div>
+</label>
+<!-- Black -->
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="shirt_color" type="radio" value="black"/>
+<div class="w-10 h-10 rounded-full bg-[#1b1c1a] border border-outline-variant peer-checked:ring-2 peer-checked:ring-primary peer-checked:ring-offset-2 peer-checked:ring-offset-surface transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Size -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest block">Size</span>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary hover:border-transparent transition-colors" href="#">Size Guide</a>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="xs"/>
+<div class="py-2 text-center border border-outline-variant rounded font-body-md text-body-md text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary peer-checked:border-primary-container transition-colors">XS</div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="size" type="radio" value="s"/>
+<div class="py-2 text-center border border-outline-variant rounded font-body-md text-body-md text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary peer-checked:border-primary-container transition-colors">S</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="m"/>
+<div class="py-2 text-center border border-outline-variant rounded font-body-md text-body-md text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary peer-checked:border-primary-container transition-colors">M</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="l"/>
+<div class="py-2 text-center border border-outline-variant rounded font-body-md text-body-md text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary peer-checked:border-primary-container transition-colors">L</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="xl"/>
+<div class="py-2 text-center border border-outline-variant rounded font-body-md text-body-md text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary peer-checked:border-primary-container transition-colors">XL</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="xxl"/>
+<div class="py-2 text-center border border-outline-variant rounded font-body-md text-body-md text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary peer-checked:border-primary-container transition-colors">XXL</div>
+</label>
+</div>
+</div>
+<!-- Customization Field -->
+<div class="mt-4">
+<label class="font-label-caps text-label-caps text-on-surface block mb-2 uppercase tracking-widest" for="custom_text">Customization (Optional)</label>
+<p class="font-body-md text-sm text-tertiary mb-3">Add initials or a short word (max 8 characters). Hand-stitched above the heart.</p>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 font-body-md text-body-md text-on-surface py-2 transition-colors placeholder:text-tertiary-fixed-dim" id="custom_text" maxlength="8" placeholder="e.g. A.B. or LOVE" type="text"/>
+</div>
+<!-- Add to Cart Button -->
+<button class="w-full mt-6 bg-primary-container text-on-primary font-body-lg text-body-lg py-4 rounded hover:bg-surface-tint transition-colors duration-300" type="submit">
+                        Add to Cart - $65.00
+                    </button>
+<div class="flex items-center justify-center gap-2 mt-4 text-tertiary font-body-md text-sm">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+<span>Ships in 2-3 weeks due to custom nature.</span>
+</div>
+</form>
+<!-- Accordion Details -->
+<div class="border-t border-outline-variant mt-8 pt-4">
+<details class="group py-4 border-b border-outline-variant">
+<summary class="flex justify-between items-center font-title-sm text-title-sm text-on-surface cursor-pointer list-none">
+                            The Fabric
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-tertiary mt-4">
+                            We source only 100% GOTS-certified organic cotton. It's pre-washed to minimize shrinkage and provide a remarkably soft, lived-in feel from day one. Medium weight (180gsm) for year-round wear.
+                        </p>
+</details>
+<details class="group py-4 border-b border-outline-variant">
+<summary class="flex justify-between items-center font-title-sm text-title-sm text-on-surface cursor-pointer list-none">
+                            Our Process
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-tertiary mt-4">
+                            Every single letter or motif is mapped out and stitched by hand in our local studio using premium cotton threads. We don't use digitizing machines, meaning each piece has slight, beautiful variations that make it uniquely yours.
+                        </p>
+</details>
+</div>
+</div>
+</section>
+<!-- You Might Also Like -->
+<section class="mt-stack-lg pt-stack-md border-t border-outline-variant">
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-primary mb-stack-sm text-center">You might also like</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product 1 -->
+<a class="group block" href="#">
+<div class="aspect-[4/5] w-full relative rounded overflow-hidden bg-surface-container-low mb-4">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A photograph of a folded custom embroidered canvas tote bag in a warm beige color. The embroidery shows a small, stylized botanical design. Natural light, minimal setting, emphasizing the texture of the heavy canvas and the fine thread work. High-end lifestyle brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3nSDL5RSrdOy8XYTuptDsNwYVsmxbSfLkWqYLyAzFJBQH7JC9kw3aT_8xb1PpMyfX2vp1T_UaNAknrdTUyh0TCAxWwGxtM1Av1PM59L09t3rqcslcsFV31E8gWby67PgKguXdrzkpgB1riFA3slLbOd_0lPsm2Er17ROlthK6e_VJgNvP4pukxZsurJSTBAfWs7nbNdLrq-_bacdw_gpNs9z3qgOfwnoEoWIajRg8TaRmrKJXrkHN"/>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">The Everyday Tote</h3>
+<p class="font-body-md text-body-md text-tertiary">$45.00</p>
+</a>
+<!-- Product 2 -->
+<a class="group block" href="#">
+<div class="aspect-[4/5] w-full relative rounded overflow-hidden bg-surface-container-low mb-4">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A photograph of a soft, sage green crewneck sweatshirt with custom embroidery on the cuff. The embroidery features a tiny heart. Soft, diffused lighting highlights the cozy fleece texture of the garment. Clean, minimal background to focus on the artisanal detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuhS15o5DqxVbQTvZqL8EYDQfCM93LCbA2XmFqoHj_v_dKuwqzsIqafx8zPrr12XUFtAG1vRRNfFgHYdOTlEiCyUX0XoOEcGfO-ocO-lEou-WlQEy9M9H_RuxeZGxGzm16wy80C2ZaKxCK_r3NIqumt2UjMXYSjub8OKlyVBPYKjKtoLx0dTTCNCsdOVHpvqYUsJ2x5Wmr9ZJtyfLV83hNuUxeNQSVUZ2KtwHyWv3cQ2yQdcmhkSzg"/>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">Signature Crewneck</h3>
+<p class="font-body-md text-body-md text-tertiary">$85.00</p>
+</a>
+<!-- Product 3 -->
+<a class="group block" href="#">
+<div class="aspect-[4/5] w-full relative rounded overflow-hidden bg-surface-container-low mb-4">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up of a pair of organic cotton socks in a light oatmeal color, featuring a small, custom embroidered initial near the ankle. Warm, inviting lighting on a textured stone surface, evoking a premium, thoughtful, and bespoke product feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClhVwfEPdxOGxwYwN11OkL2WIKauWFAA3dZ9RhnUN3v_CS5igC-RDTITANVYIVcOIkx_PUbsjx8NsMHEFxi5ylPzbgS0_EBQLQ-tMUll_R9PTwOXKDL_hGED3iZvNl1y0v1eLKgIqzEZJFSXk5ayFuHiF5P9RnCZdB1z7MsPDfyJQ1DIddhx-HeEt50y1XxPDtTCGfOiIDs4hOedQW8nGZgI6yuw05QExmNCqJ-SW70nARU4tMY9wH"/>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">Monogram Socks</h3>
+<p class="font-body-md text-body-md text-tertiary">$22.00</p>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-low dark:bg-surface-container-lowest grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-body-md font-body-md">
+<div class="col-span-1 md:col-span-1">
+<a class="font-display-lg text-display-lg text-primary block mb-4 md:font-display-lg md:text-display-lg font-display-lg-mobile text-display-lg-mobile" href="#">Dudi's</a>
+<p class="text-tertiary">© 2024 Dudi's Custom Embroidery. Handcrafted with care.</p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-gutter pt-4 md:pt-0">
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Shop All</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Custom Order</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Our Story</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-2 col-span-2 md:col-span-1 mt-4 md:mt-0">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Newsletter</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Pinterest</a>
+</div>
+</div>
+</footer>
+</body></html>

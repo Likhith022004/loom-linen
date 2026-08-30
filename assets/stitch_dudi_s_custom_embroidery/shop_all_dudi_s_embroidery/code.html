@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dudi's - For Everyone Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#002201",
+                        "tertiary-container": "#696762",
+                        "primary": "#823b18",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#a1d494",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#76320f",
+                        "surface-tint": "#944925",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ffb596",
+                        "on-tertiary-container": "#eae6df",
+                        "outline-variant": "#dac1b8",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-background": "#1b1c1a",
+                        "secondary": "#3b6934",
+                        "surface-variant": "#e4e2de",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#514f4a",
+                        "inverse-primary": "#ffb596",
+                        "surface-container": "#efeeea",
+                        "inverse-surface": "#30312e",
+                        "on-primary-container": "#ffe1d6",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "tertiary-fixed": "#e6e2db",
+                        "primary-container": "#a0522d",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f5",
+                        "outline": "#87736b",
+                        "on-secondary-container": "#3f6d38",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#23501e",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-dim": "#dbdad6",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#b9eeab",
+                        "secondary-fixed": "#bcf0ae",
+                        "primary-fixed": "#ffdbcd",
+                        "surface-container-high": "#eae8e4",
+                        "on-primary-fixed": "#360f00",
+                        "on-surface-variant": "#54433c",
+                        "surface": "#fbf9f5",
+                        "on-tertiary-fixed-variant": "#484742"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "stack-sm": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-md-mobile": ["Playfair Display"],
+                        "title-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md-mobile": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "title-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #FDFBF7; }
+        .fiber-shadow {
+            box-shadow: 0 32px 64px -12px rgba(160, 82, 45, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand -->
+<a class="font-display-lg text-display-lg text-primary dark:text-primary-fixed-dim tracking-tight" href="#">Dudi's</a>
+<!-- Links (Desktop) -->
+<div class="hidden md:flex gap-gutter items-center bg-surface-container-low dark:bg-surface-container-highest px-6 py-2 rounded-full">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300 ease-in-out" href="#">Shop All</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300 ease-in-out" href="#">For Couples</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all duration-300 ease-in-out" href="#">Custom Order</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 transition-all duration-300 ease-in-out" href="#">Our Story</a>
+</div>
+<!-- Actions -->
+<div class="flex gap-4 items-center">
+<button aria-label="shopping_bag" class="hover:opacity-80 transition-opacity duration-300 text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button aria-label="person" class="hover:opacity-80 transition-opacity duration-300 text-primary dark:text-primary-fixed-dim hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button aria-label="menu" class="md:hidden text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header -->
+<header class="mb-stack-lg text-center max-w-2xl mx-auto">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-display-lg-mobile md:font-display-lg font-display-lg-mobile text-primary mb-4">For Everyone</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A curated selection of custom embroidery designed for everyday elegance. Minimalist details with a premium feel.</p>
+</header>
+<!-- Layout Wrapper -->
+<div class="flex flex-col md:flex-row gap-gutter items-start">
+<!-- Filters Sidebar -->
+<aside class="w-full md:w-64 shrink-0 sticky top-[140px] mb-8 md:mb-0 space-y-8">
+<!-- Design Style -->
+<div>
+<h3 class="font-title-sm text-title-sm text-on-background mb-4 border-b border-surface-variant pb-2">Design Style</h3>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-transparent cursor-pointer" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Minimal</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-transparent cursor-pointer" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Floral</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-transparent cursor-pointer" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">Abstract</span>
+</label>
+</li>
+</ul>
+</div>
+<!-- Color -->
+<div>
+<h3 class="font-title-sm text-title-sm text-on-background mb-4 border-b border-surface-variant pb-2">Color</h3>
+<div class="flex flex-wrap gap-3">
+<button aria-label="White" class="w-8 h-8 rounded-full bg-white border border-outline-variant hover:border-primary transition-colors"></button>
+<button aria-label="Oatmeal" class="w-8 h-8 rounded-full bg-[#E5E0D8] border border-transparent hover:border-primary transition-colors"></button>
+<button aria-label="Charcoal" class="w-8 h-8 rounded-full bg-[#4A5568] border border-transparent hover:border-primary transition-colors"></button>
+<button aria-label="Terracotta" class="w-8 h-8 rounded-full bg-[#9C4221] border border-transparent ring-2 ring-primary ring-offset-2 ring-offset-background"></button>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-stack-md gap-x-gutter">
+<!-- Product Card 1 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] mb-4 overflow-hidden rounded bg-surface-container-low fiber-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A close-up studio shot of a high-quality, off-white t-shirt featuring a minimalist, custom embroidered single-line drawing of a face on the left chest. The lighting is soft and natural, emphasizing the texture of the cotton fabric and the precise terracotta-colored thread. The background is a seamless light beige, creating a warm, premium, and clean e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvEBDGQxa6vsFeTwwN9iRs4DDQ25QxDhSxwtAaf0ZKPISZ6FczJvJOFGGVGEz_te1IfApB9JV00Kk476k9Wc6Fzol9YsCXSmme8wh2YptHB3C3coYXi0VMvHgNhGPMqE9mMarhq-NIMtG-cn96biYCi9wJVsnlHxYQtqIt06GAeMaM3o_Wy0rr1MVKM1Ca26jlnh7m_z3T5USgG4m4RqfEYN_ZWng7d-YfoQWLi3FbzMQWnRuDK9pt"/>
+<div class="absolute top-3 left-3 bg-surface-container-low text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">Customizable</div>
+</div>
+<div class="px-2">
+<h2 class="font-title-sm text-title-sm text-on-background mb-1">Single Line Portrait</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Organic Cotton Tee</p>
+<p class="font-body-lg text-body-lg text-primary">$45.00</p>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] mb-4 overflow-hidden rounded bg-surface-container-low fiber-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A meticulously styled flat lay of a dark charcoal grey premium t-shirt showcasing a delicate, custom embroidered botanical sprig near the collar. The embroidery uses muted sage green and soft ivory threads. Gentle, diffuse side lighting highlights the high-end material and artisanal craftsmanship. The composition is minimal and sophisticated, aligned with a bespoke boutique feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr9hC7vs3-EdAg9qCq6vOaAR95HhGlwV1jRFKZ2rmBAREpPaW4LE8hcszEAlxfS20ORCumWCYOnG4FcU3rtTkdPp9exe90d6epEuVC-OpG91mTrpgsnl2fzRxoYzTVDPVeNNi1nz-75meZCZUUhScJcyEr5C2_WB2cBCLYdSp5lfCWpZTnjPA1X4ukT5F9K6CIwuPrHMK0XDAtsyzt6H4qcwRK2r7RhZJRIk8jFSoKOKLn0Q1lAWB2"/>
+</div>
+<div class="px-2">
+<h2 class="font-title-sm text-title-sm text-on-background mb-1">Botanical Sprig</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Heavyweight Tee</p>
+<p class="font-body-lg text-body-lg text-primary">$52.00</p>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] mb-4 overflow-hidden rounded bg-surface-container-low fiber-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A bright, airy lifestyle shot of a warm terracotta-colored t-shirt neatly folded. It features a subtle, abstract geometric embroidery design in cream thread near the hem. The lighting is sunny but diffused, suggesting a comfortable, luxurious Sunday morning. The aesthetic is clean, modern, and focuses on the tactile detail of the needlework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrrHM54YxYuRaC46NPCbU3TGjROJVmVcv_OlGiCnlsqof8_TQKX-FKFa43xrUTlq1arZPYdcV1BsC6fWAkAtM2t2qwG6uYASocXeuhA7N08d_UFqfNCWuWHbjMouaGTd1m00L51Hi4skD8AWqr3VyLH4fOHqFCLNeJ9LT0FD5u4Sg0K8EZ5b-AkVBw0YfVSsP3QWKcEEcjqd-WPYplbtK1RICZRaP0uFA8qK_Ok2CRoBE5aZHVLy5B"/>
+<div class="absolute top-3 left-3 bg-surface-container-low text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">In Stock</div>
+</div>
+<div class="px-2">
+<h2 class="font-title-sm text-title-sm text-on-background mb-1">Abstract Hem Detail</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Linen Blend Tee</p>
+<p class="font-body-lg text-body-lg text-primary">$48.00</p>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] mb-4 overflow-hidden rounded bg-surface-container-low fiber-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Close up photography of custom embroidery on a soft oatmeal colored t-shirt. The design is a small, elegant serif initial letter surrounded by minimalist stars, stitched in deep brown thread. The focus is incredibly sharp on the threads, slightly blurring the background to draw attention to the artisanal quality. Soft, warm natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSPo_2Fn4NtGHesqL4NoGGZpnu0gzrdcqdgyewGJ4lirfQrx7EU8RlpjZmfB3vM0NRkjAJXPw1SvSJ_Z-077HeoO0nRPnxzdJIPAKrgvxHFoVoNLsLB7L-pbwSuzl3KI49aoyCcWzi6jcr5f5i89ph2Yq2hv0_yoJHCjLn09ggXp905OIgsflKOhbKg14S3zpRSPaf8brpb-SaWjDDdg5YxNa7fshIfEJ8WYT4OeDbWUigTjYsafUm"/>
+<div class="absolute top-3 left-3 bg-surface-container-low text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">Customizable</div>
+</div>
+<div class="px-2">
+<h2 class="font-title-sm text-title-sm text-on-background mb-1">Monogram Stars</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Signature Cotton</p>
+<p class="font-body-lg text-body-lg text-primary">$50.00</p>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full py-stack-lg border-t border-surface-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-display-lg text-display-lg text-primary mb-4 tracking-tight">Dudi's</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">© 2024 Dudi's Custom Embroidery. Handcrafted with care.</p>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 focus-within:ring-1 focus-within:ring-primary" href="#">Newsletter</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 focus-within:ring-1 focus-within:ring-primary" href="#">Instagram</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 focus-within:ring-1 focus-within:ring-primary" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 focus-within:ring-1 focus-within:ring-primary" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 focus-within:ring-1 focus-within:ring-primary" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Better Together - Couples Collection | Dudi's</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#002201",
+                        "tertiary-container": "#696762",
+                        "primary": "#823b18",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#a1d494",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#76320f",
+                        "surface-tint": "#944925",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#ffb596",
+                        "on-tertiary-container": "#eae6df",
+                        "outline-variant": "#dac1b8",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-background": "#1b1c1a",
+                        "secondary": "#3b6934",
+                        "surface-variant": "#e4e2de",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#514f4a",
+                        "inverse-primary": "#ffb596",
+                        "surface-container": "#efeeea",
+                        "inverse-surface": "#30312e",
+                        "on-primary-container": "#ffe1d6",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "tertiary-fixed": "#e6e2db",
+                        "primary-container": "#a0522d",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f5",
+                        "outline": "#87736b",
+                        "on-secondary-container": "#3f6d38",
+                        "on-surface": "#1b1c1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#23501e",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-dim": "#dbdad6",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#b9eeab",
+                        "secondary-fixed": "#bcf0ae",
+                        "primary-fixed": "#ffdbcd",
+                        "surface-container-high": "#eae8e4",
+                        "on-primary-fixed": "#360f00",
+                        "on-surface-variant": "#54433c",
+                        "surface": "#fbf9f5",
+                        "on-tertiary-fixed-variant": "#484742"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "stack-sm": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-md-mobile": ["Playfair Display"],
+                        "title-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md-mobile": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "title-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .fiber-shadow {
+            box-shadow: 0 20px 40px -10px rgba(160, 82, 45, 0.05);
+        }
+        .text-thread-underline {
+            position: relative;
+            text-decoration: none;
+        }
+        .text-thread-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .text-thread-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300 ease-in-out border-b border-transparent">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto h-[72px]">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight font-bold shrink-0" href="#">
+                Dudi's
+            </a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden md:flex items-center gap-gutter font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Shop All</a></li>
+<li><a class="text-primary border-b-2 border-primary pb-1 font-semibold transition-colors duration-300" href="#">For Couples</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Custom Order</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Our Story</a></li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-unit shrink-0 text-primary">
+<button aria-label="Search" class="p-2 hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined" data-icon="search" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<button aria-label="Account" class="p-2 hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 0;">person</span>
+</button>
+<button aria-label="Cart" class="p-2 hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_bag" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+</button>
+<button aria-label="Menu" class="p-2 md:hidden hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined" data-icon="menu" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[104px] pb-stack-lg">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[60vh]">
+<div class="md:col-span-5 md:col-start-1 z-10 py-stack-md">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4 block">The Couples Collection</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">Better Together.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-md">Matching sets, "His &amp; Hers" designs, and custom anniversary embroidery designed to celebrate connection. Handcrafted with bespoke precision.</p>
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-body-md text-body-md py-3 px-8 rounded hover:bg-primary transition-colors duration-300" href="#bundle">
+                        Explore Bundles
+                    </a>
+</div>
+<div class="md:col-span-8 md:col-start-5 h-full min-h-[400px] relative rounded overflow-hidden fiber-shadow">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="A romantic, minimalist lifestyle photograph of a couple wearing matching subtly embroidered premium cotton sweatshirts. The lighting is soft and natural, golden hour aesthetic, creating a warm, intimate mood. They are walking outdoors in a natural setting. The image uses a soft beige and warm earthy tone color palette, reflecting a high-end, bespoke artisanal e-commerce aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjpURy755HGtl_nm3bpKzK3CtnEJOrRV-nH-HVp5dPHZbVhlBe2_y8luAbUkLAfQ5AV4BDM_TrjSlMya3MMqBmyNoD4LcNko6HLndU8blTW3fTiGt1gFgZoXo5GxyHYvt7fytxK6KwuYGuMtEXt1Pk_CizNy4ZYjjDFtbA2Sa6RsJ0eoGMOk6kkQzX2Kw3JObtK9KCkL6sPVpaNXBw_9gFlQHeMR8FfJMr92Dg1uAInpBo-zYSCtCM')"></div>
+</div>
+</div>
+</section>
+<!-- Featured Products - Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
+<div class="flex justify-between items-end mb-stack-md">
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-on-surface">Curated Pairings</h2>
+<div class="hidden md:flex gap-4">
+<button class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors text-on-surface">
+<span class="material-symbols-outlined">arrow_left</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors text-on-surface">
+<span class="material-symbols-outlined">arrow_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-gutter gap-y-stack-md">
+<!-- Product Card 1 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded overflow-hidden mb-4">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Close up product photography of two matching beige hoodies with subtle, elegant cursive embroidery on the chest showing initials. The fabric texture is visible, emphasizing premium quality. The background is a clean, minimal cream color to make the terracotta thread pop. High key lighting, minimalist bespoke style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIe_59keUTdexwhQpu59Qg8uNIcKYa5FlozxASUsXwH-xWGsHOSoG4JMfUbGSZnxWk2VAzn5H9TOm-NYvDyHSbbi_kD_M6D-GUhTQ9xWkg8lpId03O0V6Vt7785cmDBupXJuGFfdD83rjjVDxNGNDrbPW9BdI_CqjegvRpqgJ_9wfewERJ0jomSW_NC1eigp9CGWiIVikxvaQEqCM6AE6vRckVfVh2mmUqGy78MemqW5d72Pd2cjh_"/>
+<div class="absolute top-4 left-4 bg-surface-bright/90 backdrop-blur text-secondary font-label-caps text-label-caps px-3 py-1 rounded-full">
+                            Customizable
+                        </div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-sm text-title-sm text-on-surface">The Signature Initial Set</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Starting at $145</p>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded overflow-hidden mb-4">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist flat lay photograph of two embroidered canvas tote bags, one slightly darker beige than the other. They feature a minimalist line-art style embroidery of intertwined hands in deep terracotta thread. The setting is clean, soft beige surface with soft, diffused studio lighting. Artisanal, high-end lookbook aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwNq2s0K5w3ljaTr_3-NQH6HMivWTstul6oo1xjUdLWs9mOAJrTueG61lYioPynCFmEs-vfc77Gy42AoxG-VOgyANxF2EYpbS1XSJed3t3F8l2KMzslMpoi2w2cGRPg58nZZvyxE7ovHjLnuAijpQkH4isxN6YH5cpDB5M4AXd9sSI4dq60YdGLtDL6CqdeSKqV-BcfFCfHUHXaY-RbmJPjh-MHb1TN-wI3VuK0ycHaPM3dzKYGqKF"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-sm text-title-sm text-on-surface">Intertwined Tote Bundle</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">$85 for set</p>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group cursor-pointer">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded overflow-hidden mb-4">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Detail shot of the cuff of a premium long sleeve shirt featuring a hidden, delicate Roman numeral date embroidery in white thread on a cream fabric. The focus is sharp on the thread texture, shallow depth of field. Natural, warm lighting highlights the bespoke craftsmanship. Minimalist e-commerce presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLPs9I6HR988uxFLU3NWJG5evq-eDMb0fMc6cvTU4qDrhjvBj5TQ5IuIZyGqPVVNjhgWDuK4Ag492QmqrHp_wPLhi38DNYs1FCXnUp8oToCj1tTX7P29SW4Qygws7Ls6t0gbS9D_ndbBd_DSYMiptRE6shoCKf9Z5uj26Yot4Whs5GkSPk6BBe5D3NpVLOk98qAHGPRgsTB556Ae-XHC69mOp6sTZH-fFRMqPgOVxim0cuTwgeVfvm"/>
+<div class="absolute top-4 left-4 bg-surface-bright/90 backdrop-blur text-secondary font-label-caps text-label-caps px-3 py-1 rounded-full">
+                            Anniversary Edition
+                        </div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-sm text-title-sm text-on-surface">Hidden Date Sweaters</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Starting at $160</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Bundle & Save Section (Asymmetric Layout) -->
+<section class="bg-surface-container-low py-stack-lg px-margin-mobile md:px-margin-desktop mt-stack-lg" id="bundle">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 mb-8 md:mb-0">
+<div class="relative w-full aspect-square md:aspect-[4/3] rounded overflow-hidden fiber-shadow">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="A beautifully composed flat lay of three different couples embroidery bundles, beautifully folded. A mix of soft beige, cream, and muted terracotta fabrics. Elegant thread spools and a minimalist pair of scissors rest beside them. The aesthetic is tactile, artisanal, and premium. Soft natural lighting, editorial e-commerce style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBD1yA8nUThToSOeR4teTLVSHs80I6n5yAgfisvt-oUb6D7EUWL8TXUyLuWxHXnrR_Mo-8OIMLHvnTlw1nHSn9wNvlcJ4reRm3iO0pgQqBZjQnUNjB5VCbV7_XXo1-Yo8LZaOPUeUT1fxV2TzT6xm-1uSIbsKCJpZO5ZhbLYLmIKsu8uDNVk-Km9SE4YO5Hos_YbfYPzoTrngEXmjtBf8F-5Ug3jFA0sJY0_HzKCtiQ4dZSuPNCioZx')"></div>
+</div>
+</div>
+<div class="md:col-span-5 md:col-start-1 order-2 md:order-1">
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-on-surface mb-4">Bundle &amp; Save</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Curated sets designed for connection, offered at a special value. Perfect for anniversaries, engagements, or simply celebrating 'us'.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-4 p-4 rounded bg-surface border border-outline-variant/30 hover:border-primary/50 transition-colors cursor-pointer group">
+<div class="w-6 h-6 rounded-full border-2 border-primary flex items-center justify-center shrink-0 mt-0.5">
+<div class="w-3 h-3 bg-primary rounded-full hidden group-hover:block"></div>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface">The Cozy Duo Set</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">2 Custom Hoodies • 15% Off</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded bg-surface border border-outline-variant/30 hover:border-primary/50 transition-colors cursor-pointer group">
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center shrink-0 mt-0.5 group-hover:border-primary">
+<div class="w-3 h-3 bg-primary rounded-full hidden group-hover:block"></div>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface">The Weekender Set</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">2 Sweaters + 2 Totes • 20% Off</p>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto bg-transparent border border-primary text-primary font-body-md text-body-md py-3 px-8 rounded hover:bg-surface-tint/5 transition-colors duration-300">
+                            Build Your Bundle
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-low border-t border-surface-dim mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<a class="font-display-lg text-display-lg text-primary block mb-6" href="#">
+                    Dudi's
+                </a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-6">
+                    Handcrafted bespoke embroidery, elevating everyday moments through meticulous artistry and sustainable materials.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    © 2024 Dudi's Custom Embroidery. Handcrafted with care.
+                </p>
+</div>
+<div class="col-span-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4 text-xl">Explore</h3>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Shop All</a></li>
+<li><a class="text-primary underline hover:text-primary transition-colors duration-200" href="#">For Couples</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Our Story</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4 text-xl">Support</h3>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Instagram</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Pinterest</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Newsletter</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

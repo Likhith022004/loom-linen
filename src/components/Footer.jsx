@@ -1,120 +1,47 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Logo, { Mark } from './Logo'
-import { useStore } from '../context/StoreContext'
-
-const cols = [
-  {
-    title: 'Shop',
-    items: [
-      ['New Arrivals', '/shop?cat=new'],
-      ['Women', '/shop?cat=women'],
-      ['Men', '/shop?cat=men'],
-      ['Linen', '/shop?cat=linen'],
-      ['Embroidered', '/shop?cat=embroidered'],
-      ['Accessories', '/shop?cat=accessories'],
-    ],
-  },
-  {
-    title: 'House',
-    items: [
-      ['Our Story', '/about'],
-      ['The Craft', '/craft'],
-      ['The Loom Letter', '/#letter'],
-      ['Size Guide', '/craft'],
-      ['Stockists', '/about'],
-    ],
-  },
-  {
-    title: 'Care',
-    items: [
-      ['Shipping & Delivery', '/cart'],
-      ['Returns & Exchanges', '/cart'],
-      ['Care Guide', '/craft'],
-      ['Contact', '/about'],
-      ['FAQ', '/about'],
-    ],
-  },
-]
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
-  const { pushToast } = useStore()
-  const [email, setEmail] = useState('')
-
   return (
-    <footer className="bg-nearblack">
-      <div className="container-luxe">
-        <div className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:py-20">
-          <div>
-            <Logo />
-            <p className="mt-6 max-w-xs text-[13px] leading-relaxed text-sand">
-              Contemporary Indian garments, woven and embroidered by hand — presented in a modern
-              language.
-            </p>
-            <blockquote className="mt-8 border-l border-terracotta pl-5">
-              <p className="font-display text-xl italic text-beige">“Timeless craft, modern soul.”</p>
-            </blockquote>
-            <div className="mt-8 flex gap-4">
-              {['Instagram', 'Pinterest', 'Journal'].map((s) => (
-                <button
-                  key={s}
-                  type="button"
-                  className="text-[10px] uppercase tracking-label text-sand transition-colors hover:text-ivory"
-                  onClick={() => pushToast(`@loomandlinen on ${s}`)}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {cols.map((c) => (
-            <nav key={c.title} aria-label={c.title}>
-              <h3 className="overline">{c.title}</h3>
-              <ul className="mt-6 space-y-3.5">
-                {c.items.map(([label, to]) => (
-                  <li key={label}>
-                    <Link to={to} className="link-underline text-[13px] text-ivory/75 hover:text-ivory">
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
+    <footer className="bg-surface-container-low w-full py-20 border-t border-surface-container-high text-on-surface-variant font-body text-base">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-5 md:px-16 max-w-[1280px] mx-auto">
+        {/* Brand */}
+        <div className="md:col-span-1 flex flex-col gap-4">
+          <Link to="/" className="font-display text-3xl md:text-[48px] font-bold text-primary tracking-tight">
+            Dudi's
+          </Link>
+          <p className="max-w-xs text-sm">
+            Elevating everyday basics with bespoke, handcrafted embroidery.
+          </p>
         </div>
 
-        <div className="flex flex-col gap-6 border-t border-ivory/10 py-8 md:flex-row md:items-center md:justify-between">
-          <p className="text-[11px] text-taupe">
-            © {new Date().getFullYear()} LOOM &amp; LINEN · Crafted in India
-          </p>
-          <form
-            className="flex items-end gap-3"
-            onSubmit={(e) => {
-              e.preventDefault()
-              if (!/^\S+@\S+\.\S+$/.test(email)) return pushToast('Please enter a valid email', 'accent')
-              setEmail('')
-              pushToast('Welcome to the loom.')
-            }}
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Join the Loom Letter"
-              className="input-luxe"
-              aria-label="Email"
-            />
-            <button type="submit" className="btn-secondary px-5">
-              Join
-            </button>
-          </form>
-          <div className="flex items-center gap-3 text-[11px] text-taupe">
-            <span className="font-display text-sm italic text-beige">Est. New Delhi</span>
-            <Mark className="h-5 w-5 opacity-60" />
-          </div>
+        {/* Shop */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-display text-lg text-on-background mb-2">Shop</h4>
+          <Link to="/shop" className="hover:text-primary transition-colors duration-200">Shop All</Link>
+          <Link to="/couples" className="hover:text-primary transition-colors duration-200">For Couples</Link>
+          <Link to="/custom" className="hover:text-primary transition-colors duration-200">Custom Order</Link>
+        </div>
+
+        {/* Support */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-display text-lg text-on-background mb-2">Support</h4>
+          <a href="#" className="hover:text-primary transition-colors duration-200">Shipping & Returns</a>
+          <a href="#" className="hover:text-primary transition-colors duration-200">Privacy Policy</a>
+          <a href="#" className="hover:text-primary transition-colors duration-200">Contact Us</a>
+        </div>
+
+        {/* Connect */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-display text-lg text-on-background mb-2">Connect</h4>
+          <a href="#" className="hover:text-primary transition-colors duration-200">Newsletter</a>
+          <a href="#" className="hover:text-primary transition-colors duration-200">Instagram</a>
+          <a href="#" className="hover:text-primary transition-colors duration-200">Pinterest</a>
         </div>
       </div>
+
+      <div className="px-5 md:px-16 max-w-[1280px] mx-auto mt-12 pt-8 border-t border-surface-container-high/50 text-center md:text-left text-sm opacity-80">
+        &copy; 2024 Dudi's Custom Embroidery. Handcrafted with care.
+      </div>
     </footer>
-  )
+  );
 }
